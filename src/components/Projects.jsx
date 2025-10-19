@@ -1,7 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import p1 from "../assets/p1.jpg";
 import p2 from "../assets/p2.jpg";
-
 const Projects = () => {
   const projectData = [
     {
@@ -9,7 +8,7 @@ const Projects = () => {
       description:
         "A modern web application built using React and Tailwind CSS with dynamic components and responsive design.",
       imageUrl: p1,
-      liveUrl: "https://example.com",
+      liveUrl: "https://youtube.com",
       githubUrl: "https://github.com",
     },
     {
@@ -17,7 +16,7 @@ const Projects = () => {
       description:
         "Full-stack MERN project featuring authentication, CRUD operations, and RESTful API integration.",
       imageUrl: p1,
-      liveUrl: "https://example.com",
+      liveUrl: "https://youtube.com",
       githubUrl: "https://github.com",
     },
     {
@@ -25,17 +24,14 @@ const Projects = () => {
       description:
         "A sleek portfolio template optimized for performance and SEO with Next.js and Tailwind CSS.",
       imageUrl: p2,
-      liveUrl: "https://example.com",
+      liveUrl: "https://youtube.com",
       githubUrl: "https://github.com",
     },
   ];
 
   return (
     <section className="relative bg-gray-950 text-white py-20 px-6 overflow-hidden">
-      {/* 🔹 Subtle Red Glow Layer */}
       <div className="absolute inset-0 bg-gradient-to-b from-red-700/10 via-transparent to-red-800/10 blur-3xl opacity-60 pointer-events-none"></div>
-
-      {/* 🔸 Main Content */}
       <div className="relative max-w-7xl mx-auto text-center">
         <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-red-500 via-red-400 to-white bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,0,0,0.3)]">
           My Projects
@@ -46,7 +42,6 @@ const Projects = () => {
           performance, and modern web development best practices.
         </p>
 
-        {/* 🔸 Project Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {projectData.map((project, index) => (
             <ProjectCard key={index} {...project} />
