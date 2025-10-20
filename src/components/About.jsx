@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="relative bg-black text-white py-16 px-6 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-red-700/30 via-black/60 to-black/90 backdrop-blur-lg"></div>
-      <div className="relative max-w-7xl mt-9 mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="relative max-w-7xl mt-25 mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="flex-1 bg-white/5 p-8 rounded-2xl border border-red-500/20 shadow-lg backdrop-blur-md">
           <h1 className="text-6xl font-semibold mb-6">
             <span className="text-red-500">MERN Stack</span> Developer
